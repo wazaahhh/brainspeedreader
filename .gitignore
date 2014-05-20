@@ -1,0 +1,9 @@
+## LaTeX
+*.aux
+*.log
+*.bbl
+*.blg
+*.toc
+*.pdf
+*.out
+*.synctext.gz

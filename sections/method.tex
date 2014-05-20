@@ -1,0 +1,54 @@
+\section{Method}
+
+\subsection{Brain Speed Reader}
+
+{\bf describe the brain control system}
+
+\begin{enumerate}
+  \item capture brainwaves for 1 second
+  \item compute power spectrum
+  \item compute normalized entropy
+  \item update display speed ({\bf trick of the moving average to be described here})
+\end{enumerate}
+
+
+\subsection{Experimental Protocol}
+
+
+\begin{enumerate}
+  \item Constant Rate
+  \item Randomly Varying Text : AR(1) 
+  \item Brain Speed Reader
+\end{enumerate}
+
+\subsection{Measuring Text Complexity}
+
+ATOS  ( ref: Michael Milone,The Development of ATOS, The Renaissance Readability Formula, p10 (2010) \url{http://doc.renlearn.com/KMNet/R004250827GJ11C4.pdf}
+
+\begin{itemize}
+  \item Words per sentence
+  \item Average grade level of words ( which class grade the word is first seen)
+  \item Characters per word
+\end{itemize}
+
+
+$ATOS Rasch Difficulty Formula = -8.54 + 1.95 * Ln(AvgWords) + .46 * AvgGrad100 + 1.74 * Ln(AvgChar)$
+
+Adjustment for books with less than 500 words
+
+$BLGL for Books With Fewer Than 500 Words = .004 * Book Length + 0.4$
+
+
+Table detailing texts : \url{https://docs.google.com/spreadsheets/d/1uwkoToM-p3UFrd0U_1vOX4eBJsmYuPVYVhvhsZ8Y5Nc/edit#gid=0}
+
+
+
+
+%\begin{itemize}
+%  \item {\bf text 0 (adapted from Coming of Age in Samoa, Margaret Mead, 1928
+%)}:   $ATOS=9.5$,  $word~count = 421$
+%  \item {\bf Text 1  (adapted from The Warden, Anthony Trollope, 1855)} : $ATOS=8.3$, $word~count = 563$
+%  \item {\bf Text 2  (adapted from The Mayor of Casterbridge, Thomas Hardy, 1886) } : $ATOS=10.2$, $word~count = 831$
+%  \item {\bf Text 3 (Adapted from: The Social Function of Science, John D Bernal (1939))} : $ATOS=11.9$, $word~count = 421$
+%\end{itemize}
+
