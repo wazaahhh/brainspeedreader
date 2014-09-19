@@ -1,0 +1,10 @@
+## LaTeX
+*.aux
+*.log
+*.bbl
+*.blg
+*.toc
+*.pdf
+*.out
+*.synctex.gz
+brainspeed.synctex.gz

@@ -1,0 +1,142 @@
+\documentclass{sigchi}
+
+% Use this command to override the default ACM copyright statement (e.g. for preprints). 
+% Consult the conference website for the camera-ready copyright statement.
+
+
+%% EXAMPLE BEGIN -- HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP -- (July 22, 2013 - Paul Baumann)
+ %\toappear{Permission to make digital or hard copies of all or part of this work for personal or classroom use is 	granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. \\
+% {\emph{CHI'14}}, April 26--May 1, 2014, Toronto, Canada. \\
+% Copyright \copyright~2014 ACM ISBN/14/04...\$15.00. \\
+% DOI string from ACM form confirmation}
+%% EXAMPLE END -- HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP -- (July 22, 2013 - Paul Baumann)
+
+
+% Arabic page numbers for submission. 
+% Remove this line to eliminate page numbers for the camera ready copy
+% \pagenumbering{arabic}
+
+
+% Load basic packages
+\usepackage{balance}  % to better equalize the last page
+\usepackage{graphics} % for EPS, load graphicx instead
+\usepackage{times}    % comment if you want LaTeX's default font
+\usepackage{url}      % llt: nicely formatted URLs
+
+% llt: Define a global style for URLs, rather that the default one
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\bf\ttfamily}}}
+\makeatother
+\urlstyle{leo}
+
+
+% To make various LaTeX processors do the right thing with page size.
+\def\pprw{8.5in}
+\def\pprh{11in}
+\special{papersize=\pprw,\pprh}
+\setlength{\paperwidth}{\pprw}
+\setlength{\paperheight}{\pprh}
+\setlength{\pdfpagewidth}{\pprw}
+\setlength{\pdfpageheight}{\pprh}
+
+% Make sure hyperref comes last of your loaded packages, 
+% to give it a fighting chance of not being over-written, 
+% since its job is to redefine many LaTeX commands.
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+pdftitle={SIGCHI Conference Proceedings Format},
+pdfauthor={LaTeX},
+pdfkeywords={SIGCHI, proceedings, archival format},
+bookmarksnumbered,
+pdfstartview={FitH},
+colorlinks,
+citecolor=black,
+filecolor=black,
+linkcolor=black,
+urlcolor=black,
+breaklinks=true,
+}
+
+% create a shortcut to typeset table headings
+\newcommand\tabhead[1]{\small\textbf{#1}}
+
+
+% End of preamble. Here it comes the document.
+\begin{document}
+
+\title{Controlling Rapid Serial Visual Presentation of Text with mobile EEG Devices}
+
+\numberofauthors{4}
+\author{
+  \alignauthor Thomas Maillart\\
+    \affaddr{UC Berkeley, School of Information}\\
+    \affaddr{102 South Hall, Berkeley, CA 94720}\\
+    \email{thomas.maillart@ischool.berkeley.edu}\\
+    %\affaddr{Optional phone number}
+  \alignauthor Nick Merrill\\
+    \affaddr{UC Berkeley, School of Information}\\
+    \affaddr{102 South Hall, Berkeley, CA 94720 }\\
+   \email{ffff@berkeley.edu}\\
+    %\affaddr{Optional phone number}    
+  \alignauthor John Chuang\\
+    \affaddr{UC Berkeley, School of Information}\\
+    \affaddr{102 South Hall, Berkeley, CA 94720}\\
+    \email{chuang@ischool.berkeley.edu}\\
+    %\affaddr{Optional phone number}
+    %\alignauthor Benjamin Johnson\\
+    %\affaddr{UC Berkeley, School of Information}\\
+    %\affaddr{102 South Hall, Berkeley, CA 94720}\\
+    %\email{johnsonb@ischool.berkeley.edu}\\
+    %\affaddr{Optional phone number}
+}
+
+\maketitle
+
+\input{../sections/abstract.tex}
+
+\keywords{BCI, Entropy, Speed-Reading, Cognitive Attention}
+
+\category{H.5.m.}{Information Interfaces and Presentation (e.g. HCI)}{Miscellaneous}
+
+
+\input{../sections/intro.tex}
+
+\input{../sections/related_work.tex}
+
+\input{../sections/method.tex}
+
+\begin{figure}[!h]
+\centering
+%\includegraphics[width=0.9\columnwidth]{Figure1}
+\caption{With Caption Below, be sure to have a good resolution image
+  (see item D within the preparation instructions).}
+\label{fig:figure1}
+\end{figure}
+
+\begin{table}
+  \centering
+  \begin{tabular}{|c|c|c|}
+    \hline
+    \tabhead{Objects} &
+    \multicolumn{1}{|p{0.3\columnwidth}|}{\centering\tabhead{Caption --- pre-2002}} &
+    \multicolumn{1}{|p{0.4\columnwidth}|}{\centering\tabhead{Caption --- 2003 and afterwards}} \\
+    \hline
+    Tables & Above & Below \\
+    \hline
+    Figures & Below & Below \\
+    \hline
+  \end{tabular}
+  \caption{Table captions should be placed below the table.}
+  \label{tab:table1}
+\end{table}
+
+
+\section{Acknowledgments}
+T. Maillart acknowledges SNF Grant ....
+\balance
+
+
+\bibliographystyle{acm-sigchi}
+\bibliography{sample}
+\end{document}
