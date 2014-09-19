@@ -17,9 +17,10 @@
 
 \begin{enumerate}
   \item Constant Rate
-  \item Randomly Varying Text : AR(1) 
-  \item Brain Speed Reader
+  %\item Randomly Varying Text : AR(1) $\rigtharrow$ AR1(n,baseline,baseline/2,0.5,sigma=std) AR1 formula : $c + phi * X[-1] + np.random.normal(scale=sigma)$
+  %\item Brain Speed Reader : (i) compute entropy $S$ at t, (ii) normalize $S$ as $S_{norm} = (S- \langle S \rangle) / \sigma_S$, with $\langle S \rangle$ and $\sigma_S$ computed over the last XX values of entropy, (iii) compute a new speed as $v(t+1) = v(t)\cdot(1-0.2\sdot S_{norm})$
 \end{enumerate}
+
 
 \subsection{Measuring Text Complexity}
 
