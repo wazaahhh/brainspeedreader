@@ -1,0 +1,47 @@
+\section{Experimental Protocol}
+To determine the gains of our brain speed-reader apparatus when reading, we have conducted an experiment, involving XX subjects who participated in our study. The experimental procedures described here were approved by an Institutional Review Board. 
+
+\subsection{Procedure}
+After obtaining individual consent, we conducted a quick {\bf calibration} task. A text was displayed word by word to each subject, who could adapt the rate of word display with the right (faster) and left (slower) arrow keys, until they reach their comfort zone. This baseline rate would be reused during the experiment. Then, the subject was asked to {\bf wear} the Neurosky Mindset. When ready, a {\bf text was displayed word by word} in a Rapid Visual Serial Presentation (RVSP) manner. After all text was been displayed, the subject was asked some comprehension questions regarding the content of the text. This procedure was repeated three or four times with various texts and various treatments involving varying the rate $R$ of word display:
+
+\begin{enumerate}
+  \item {\bf Constant Rate: } the rate of word display remains constant with $R(t) = R_{0}$ for $\forall t$.  
+  \item {\bf Brainwave Treatment: } starting from the baseline $R_0$, the rate $R$ changes every quarter second as a function of the rate at the previous step and as a function of the entropy $S_{norm}$ measured in real-time from the EEG captured by the Neurosky mindset, and according to formula (\ref{eq:RateChange}).
+    \item {\bf Random Rate Treatment: }  %Randomly Varying Text : R(1) $\rigtharrow$ AR1(n,baseline,baseline/2,0.5,sigma=std) AR1 formula : c + phi * X[-1] + np.random.normal(scale=sigma)
+\end{enumerate}
+
+The subject was wearing the Neurosky headset and was not informed whether the treatment involved using EEG as an input for controlling the rate $R$ of word display. In other word, the subject and no information on the three treatments, and had no possibility to distinguish between these treatments, in other ways than guessing from their experience.
+
+In case, four treatments were applied, one of the treatments was repeated once with a different text. After the end, subjects were asked to fill short surveys for each text, asking about comfort, perceived level of understanding, degree of control, followed by a survey to collect demographic informations.
+
+\subsection{Measuring Text Complexity}
+
+ATOS  ( ref: Michael Milone,The Development of ATOS, The Renaissance Readability Formula, p10 (2010) \url{http://doc.renlearn.com/KMNet/R004250827GJ11C4.pdf}
+
+\begin{itemize}
+  \item Words per sentence
+  \item Average grade level of words ( which class grade the word is first seen)
+  \item Characters per word
+\end{itemize}
+
+
+$ATOS Rasch Difficulty Formula = -8.54 + 1.95 * Ln(AvgWords) + .46 * AvgGrad100 + 1.74 * Ln(AvgChar)$
+
+Adjustment for books with less than 500 words
+
+$BLGL for Books With Fewer Than 500 Words = .004 * Book Length + 0.4$
+
+
+Table detailing texts : \url{https://docs.google.com/spreadsheets/d/1uwkoToM-p3UFrd0U_1vOX4eBJsmYuPVYVhvhsZ8Y5Nc/edit#gid=0}
+
+
+
+
+%\begin{itemize}
+%  \item {\bf text 0 (adapted from Coming of Age in Samoa, Margaret Mead, 1928
+%)}:   $ATOS=9.5$,  $word~count = 421$
+%  \item {\bf Text 1  (adapted from The Warden, Anthony Trollope, 1855)} : $ATOS=8.3$, $word~count = 563$
+%  \item {\bf Text 2  (adapted from The Mayor of Casterbridge, Thomas Hardy, 1886) } : $ATOS=10.2$, $word~count = 831$
+%  \item {\bf Text 3 (Adapted from: The Social Function of Science, John D Bernal (1939))} : $ATOS=11.9$, $word~count = 421$
+%\end{itemize}
+
