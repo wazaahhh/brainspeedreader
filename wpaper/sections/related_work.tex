@@ -1,19 +1,111 @@
 \section{Related Work}
+\label{related_work}
+To design an efficient {\it brain speed reader}, we must understand the cognition mechanisms underlying the process of reading sentences. It is also required to know how these cognition mechanisms can be detected with EEG technologies, and finally how EEG can deliver a signal usefully actionable for controlling a RSVP reader, through a Brain Computer Interface (BCI).
 
-\subsection{RSVP}
+\subsection{RSVP, Cognition and Memory}
+Research on cognition relating to a rapid sequence of words \cite{forster1970visual} and pictures \cite{potter1975time,potter1969recognition} go back to the 70's and 80's. RSVP offers a way to control these processes at fine-grained level. Rapid serial visual presentation (RSVP): A method for studying language processing \cite{potter1984rapid} This research is centered on (i) how long it takes to internalize the meaning of a word or a sentence, sufficiently that it is possible to recall it accurately, (ii) what kinds of memory processes are solicited [short-term memory (STM) or iconic memory, long-term memory (LTM), working memory (WM)], and (iii) how these are engaged to transform ``raw" information into ``conceptual" information, which can be recalled more easy \cite{}. To emphasize on the interplay between STM bringing information, and LTM pulling out useful concepts for broader understanding, Molly Potter introduced Conceptual Short-Term Memory (CSTM) \cite{potter1993very}. ``Unlike STM, CSTM is central to cognitive processing.
+Recognition of meaningful stimuli such as words or objects
+rapidly activates conceptual information and leads
+to the retrieval of additional relevant information from
+LTM." \cite{potter1993very}. It also depends on the goals set: e.g., identify a specific item in a list, or get a conceptual understanding of a sequence.
+
+It is important to point out the difference between the capacity to recall unrelated words versus semantically related words, but also, in the case of whole paragraphs, some (short) time is required after a sentence to integrate knowledge \cite{}.
+
+It is worth noting that scrolled and rapid serial visual presentation texts are read at similar rates by the visually impaired \cite{fine1995scrolled} \textcolor{red}{\bf [ could be moved to intro or discussion or both]}.
+
+Potter et al. (1980) found RSVP to an effective way to ensure every word is read, but less effective than rapid reading when overall retention was measured 
+
+Chen (1983) found that the half of his college subjects who were less good readers remember more from RSVP paragraphs than from conventional paragraphs viewed for the same total time; the better readers showed a slight but not significant drop, with RSVP.
 
 
+
+%Visual perception of rapidly presented word sequences of varying complexity 
+
+%Temporal limits of selection and memory encoding a comparison of whole versus partial report in rapid serial visual presentation \cite{nieuwenstein2006temporal}
+
+%Rapid serial visual presentation: a space-time trade-off in information presentation \cite{de2000rapid}
+
+%\subsection{Memory and Time to Process Information}
+%``When people view or listen to continuous sequences of scenes or
+%words, as they do when they look around, read, listen, or watch TV,
+%a series of conceptual representations is activated. These rapidly activated
+%and equally rapidly forgotten representations are the raw material
+%for identification and comprehension of words, pictures, and
+%sequences such as a sentence, and indeed for intelligent thought more
+%generally. The normal ease with which we understand what we read
+%and see around us is based on selective processing that takes place
+%much faster than has been supposed in many theories of working and
+%short-term memory, leading to the CSTM hypothesis." \cite{potter1999understanding,potter1993very}
+%
+%``CSTM is a processing and memory system different from early visual (iconic)
+%memory, conventional short-term memory (STM), and longer-term
+%memory (LTh{) in three important respects: (1) the rapidity with which
+%stimuli readr a postcategoricaf meaningful level of representation, (2)
+%the rapid struchrring of these representations, and (3) the lack of awareness
+%(or immediate forgetting) of inforrration that is not structured
+%or otherwise consolidated. Structure-building in CSTM ranges from
+%spontaneous grouping of words in lists on the basis of meaning (one
+%of the simplest forrrs of conceptual structuring) to linguistic parsing
+%and semantic interpretation of sentences and more extended texts
+%(examples of highly skilled structuring). Organization or structuring
+%of new stimuli enhances memory for them." \cite{potter1999understanding}
+%
+%A capacity theory of comprehension: individual differences in working memory \cite{just1992capacity}
+%
+%Individual differences in working memory and reading \cite{daneman1980individual}
+%
+%``Second, this information is used in various ways, depending on the
+%viewer's current goal if the viewer is trying to understand the whole
+%sequence (e.9., a sentence), the information is used to discover or build
+%a comprehensive structured representation, but if the viewer is trying
+%to locate and identify a particular kind of information (as in target
+%search), then only a subset of the information is selected." \cite{potter1999understanding}
+%
+%``processingT. he CSTM hypothesis
+%is not only that conceptual information is activated rapidly, but
+%also that the initial activation is highly unstable, such that the
+%information is deactivated or forgotten within a few hundred
+%msec if it is not incorporated into a structure (or selected for
+%further processing" \cite{potter1999understanding}
+%
+
+\textcolor{red}{\bf [I am still missing some references on the processing lag (between stimulus and conceptualization ($~200ms$?]}
+
+\subsubsection{Memory, Language and EEG}
+
+``led Klimesch (1996, 1999) to suggest that activity within the upper alpha band correlates with search and retrieval processes of semantic information
+stored in cortical associative networks. Together, the reviewed results suggest a functional dissociation for theta and upper alpha oscillations with respect to memory processes. Theta activity seems to be related to episodic LTM encoding and the maintenance of information in WM, while activity in the upper alpha seems to be related to semantic LTM retrieval." \cite{khader2011eeg}
+
+(MRI study?) Activation of left prefrontal and medial temporal cortices were engaged during the encoding of both recalled and forgotten words \cite{wagner1998building}. At least partially supported by Kapur et al. \cite{kapur1996neural} in a PET (positron emission tomography) study 
+
+``Left prefrontal brain regions are substantially more involved during
+deeper encoding of verbal stimuli, which is correlated
+with an increased involvement of the semantic memory
+system and simultaneous encoding into the episodic memory"
+ \cite{fletcher1998functiona,tulving1994hemispheric}
+
+Long-range EEG synchronization during word encoding correlates with successful memory performance \cite{weiss2000long}. Importance of both high frequencies \cite{miltner1999coherence} and low frequencies \cite{weiss2000long}. ``In view of the findings in literature, we postulated increased coherence between brain regions involved in memory processes
+like prefrontal and temporalrparietal regions." \cite{weiss2000long}
+
+
+The contribution of EEG coherence to the investigation of language \cite{weiss2003contribution}
+
+Increased neuronal communication accompanying sentence comprehension \cite{weiss2005increased}
+
+Event-related brain potentials (ERPs) elicited during rapid serial visual presentation of congruous and incongruous sentences \cite{kutas1987event}
+
+Processing new and repeated names: Effects of coreference on repetition priming with speech and fast RSVP  (ERP?) \cite{camblin2007processing}
+
+Phase coupling in a cerebro-cerebellar network at 8--13 Hz during reading  \cite{kujala2007phase}
+
+\textcolor{red}{\bf [What has not been done (or little) :]} RSVP with EEG Power spectra analysis 
+
+To our knowledge, nothing has been done related to language with consumer grade EEG.
+
+Broca's area: Nomenclature, anatomy, typology and asymmetry \cite{keller2009broca}
 
 \subsection{Control through Brainwaves}
-
-Mind-controlled transgene expression by a wireless-powered optogenetic designer cell implant \cite{folcher2014mindcontrolled}
-
-Improving Driver Alertness through Music Selection Using a Mobile EEG to Detect Brainwaves \cite{liu2013driverAlertness}
-
-14. Wang, W. et al. Neural interface technology for rehabilitation: exploiting and
-promoting neuroplasticity. Phys. Med. Rehabil. Clin. N. Am. 21, 157Ð178
-(2010).
-
+Rather than understanding brain network coherence in the network, we are interested here in controlling the pace of words with EEG activation.
 
 15. Daly, J. J. \& Wolpaw, J. R. Brain-computer interfaces in neurological
 rehabilitation. Lancet Neurol. 7, 1032Ð1043 (2008).
@@ -22,15 +114,34 @@ rehabilitation. Lancet Neurol. 7, 1032Ð1043 (2008).
 brain-computer interfaces for continuous control of robots. Clin. Neurophysiol.
 119, 2159Ð2169 (2008).
 
-30. Heinrich, H., Gevensleben, H. \& Strehl, U. Annotation: neurofeedback - train
-your brain to train behaviour. J. Child Psychol. Psychiatry 48, 3Ð16 (2007).
-
-
 Silbert, L. J., Honey, C. J., Simony, E., Poeppel, D. \& Hasson, U. Coupled neural systems underlie the production and comprehension of naturalistic narrative speech. Proceedings of the National Academy of Sciences 111, E4687-E4696 (2014). \cite{silbert2014coupled}
 
+\subsection{Single EEG BCI}
 
-Johnstone, S. J., Blackman, R. \& Bruggemann, J. M. EEG from a single-channel
-dry-sensor recording device. Clin. EEG Neurosci. 43, 112Ð120 (2012).
+Improving Driver Alertness through Music Selection Using a Mobile EEG to Detect Brainwaves \cite{liu2013driverAlertness}
 
-Szibbo, D., Luo, A. \& Sullivan, T. J. Removal of blink artifacts in single channel
-EEG. Conf. Proc. IEEE Eng Med. Biol. Soc. 2012, 3511Ð3514 (2012).
+
+Johnstone, S. J., Blackman, R. \& Bruggemann, J. M. EEG from a single-channel dry-sensor recording device. Clin. EEG Neurosci. 43, 112Ð120 (2012).
+
+Szibbo, D., Luo, A. \& Sullivan, T. J. Removal of blink artifacts in single channel EEG. Conf. Proc. IEEE Eng Med. Biol. Soc. 2012, 3511Ð3514 (2012).
+
+OUR paper shows \cite{Merill2015}
+
+We are aware that our input device is of low quality, and cannot, by design, capture spatial brain activation (there is only one electrode). Also, we assume that the low quality (i.e., one channel with dry EEG) is not sufficient to capture time delays (ERPs), usually observed in response to stimuli \cite{}. 
+
+
+
+\textcolor{red}{\bf [Background research shows that RSVP offers a good way to control and standardize the cognitive process at work when reading sentences. Furthermore ]}
+
+
+\subsection{logarithmic reading}
+
+We learn that time to read a word depends on the context and on the word complexity 
+
+The effect of word predictability on reading time is logarithmic \cite{smith2013effect}
+
+
+%Mind-controlled transgene expression by a wireless-powered optogenetic designer cell implant \cite{folcher2014mindcontrolled}
+
+%14. Wang, W. et al. Neural interface technology for rehabilitation: exploiting and promoting neuroplasticity. Phys. Med. Rehabil. Clin. N. Am. 21, 157Ð178 (2010).
+

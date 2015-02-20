@@ -1,41 +1,26 @@
-\section{Experimental Protocol}
-To determine the gains of our brain speed-reader apparatus when reading, we have conducted an experiment, involving XX subjects who participated in our study. The experimental procedures described here were approved by an Institutional Review Board. 
+\subsection{Experimental Protocol}
+\label{exp_protocol}
 
-\subsection{Procedure}
-After obtaining individual consent, we conducted a quick {\bf calibration} task. A text was displayed word by word to each subject, who could adapt the rate of word display with the right (faster) and left (slower) arrow keys, until they reach their comfort zone. This baseline rate would be reused during the experiment. Then, the subject was asked to {\bf wear} the Neurosky Mindset. When ready, a {\bf text was displayed word by word} in a Rapid Visual Serial Presentation (RVSP) manner. After all text was been displayed, the subject was asked some comprehension questions regarding the content of the text. This procedure was repeated three or four times with various texts and various treatments involving varying the rate $R$ of word display:
+To test the research hypotheses proposed in Section \ref{hypo}, and the practical feasibility our {\it brain speed reader} apparatus (c.f., Section \ref{apparatus}), we  have conducted an experiment on XX ($\sim 25$ \textcolor{red}{\bf [30 subjects would be a minimum]}) participants.\footnote{The experimental procedures described here were approved by an Institutional Review Board.} The experimental protocol is as follows, and was conducted on a local web interactive interface, along with the Neurosky Mindwave mobile EEG headset \cite{}.
+
+After obtaining individual consent, we asked each subject to fill general demographics (e.g., age, highest degree obtained), and questions more specific related to reading skills, Attention Deficit Hyperactivity Disorder (ADHD), or any visual impairment that could impede good reading  \textcolor{red}{\bf [we could also try to build a cohort of ADHD]}.
+
+The subject was then asked to perform 4 preliminary tasks presented randomly: (i) resting state for 10 seconds, (ii) eye blink (5 seconds), (iii) watch a short video on screen (30 seconds), and (iv) read a $\approx 500$ words text in silence. For all these tasks, EEG signal was recorded, and in the latter task, reading time was recorded, to establish a benchmark.
+
+The subject was the presented with a list of articles of various topics, length and difficulty (as measured by the ATOS score,\footnote{Michael Milone,The Development of ATOS, The Renaissance Readability Formula, p10 (2010) \url{http://doc.renlearn.com/KMNet/R004250827GJ11C4.pdf} \textcolor{red}{\bf [see if it really makes sense to use ATOS as the main parameters are straightforward, i.e., length of text, words per sentence, characters per word, and average grade level of words (which class grade the word is first seen $\rightarrow$ not necessarily important because we only survey adults]}} borrowed from popular blogs and online news. The subject had to pick 4 articles of her choice for RSVP reading. For each article, one of the four treatments was randomly applied:
 
 \begin{enumerate}
-  \item {\bf Constant Rate: } the rate of word display remains constant with $R(t) = R_{0}$ for $\forall t$.  
-  \item {\bf Brainwave Treatment: } starting from the baseline $R_0$, the rate $R$ changes every quarter second as a function of the rate at the previous step and as a function of the entropy $S_{norm}$ measured in real-time from the EEG captured by the Neurosky mindset, and according to formula (\ref{eq:RateChange}).
-    \item {\bf Random Rate Treatment: }  %Randomly Varying Text : R(1) $\rigtharrow$ AR1(n,baseline,baseline/2,0.5,sigma=std) AR1 formula : c + phi * X[-1] + np.random.normal(scale=sigma)
+  \item {\bf Constant Rate: } the rate of word display remains constant with $X(t) = X_{0}$ for $\forall t$. The baseline rate $X_{0}$ is determined as 20\% faster than the average time spent by the subject on each word during the text reading preliminary task as described above.
+  \item {\bf Brain Speed Reader ($\alpha <0$): } starting from the baseline $X_0$, the rate $X$ changes every quarter second following formula (\ref{eq:RateChange}). This treatment tests {\bf Hypothesis 1a}.
+ \item {\bf Brain Speed Reader ($\alpha > 0$): } Similar to treatment 2. Tests {\bf Hypothesis 1b}.
+ \item {\bf Randomly Varying Rate: } This treatment mimics the brain speed reader treatment, with a randomly varying $X(t)$, according to an auto-regressive model, calibrated on the same distribution as the random variable$S_{norm}$.
 \end{enumerate}
 
-The subject was wearing the Neurosky headset and was not informed whether the treatment involved using EEG as an input for controlling the rate $R$ of word display. In other word, the subject and no information on the three treatments, and had no possibility to distinguish between these treatments, in other ways than guessing from their experience.
+In treatments {2} and { 3}, $|\alpha|$ was set randomly among $\mathrm{A} = \{0.50, 1.00, 2.00 \}\cdot10^{-2}$.
 
-In case, four treatments were applied, one of the treatments was repeated once with a different text. After the end, subjects were asked to fill short surveys for each text, asking about comfort, perceived level of understanding, degree of control, followed by a survey to collect demographic informations.
+Each treatment is followed by open comprehension questions: such as identification of the main characters and writing a short summary of the article of maximum 500 characters  \textcolor{red}{\bf [find more standardized comprehension questions, if we can]}, by recall questions, such as finding words that have appeared in the text among a list of words. During the four treatments, the subject was wearing the EEG headset, without knowing whether the treatment was involving feedback control by the way of EEG signal. In other word, the subject and no information on the three treatments, and had no possibility to distinguish between these treatments, in other ways than guessing from their experience. At the end, subjects were asked to rank treatments by perceived comfort, understanding, degree of control. We finally, revealed which treatment was associated with each text, we also provided some basic reading performance feedback.
 
-\subsection{Measuring Text Complexity}
-
-ATOS  ( ref: Michael Milone,The Development of ATOS, The Renaissance Readability Formula, p10 (2010) \url{http://doc.renlearn.com/KMNet/R004250827GJ11C4.pdf}
-
-\begin{itemize}
-  \item Words per sentence
-  \item Average grade level of words ( which class grade the word is first seen)
-  \item Characters per word
-\end{itemize}
-
-
-$ATOS Rasch Difficulty Formula = -8.54 + 1.95 * Ln(AvgWords) + .46 * AvgGrad100 + 1.74 * Ln(AvgChar)$
-
-Adjustment for books with less than 500 words
-
-$BLGL for Books With Fewer Than 500 Words = .004 * Book Length + 0.4$
-
-
-Table detailing texts : \url{https://docs.google.com/spreadsheets/d/1uwkoToM-p3UFrd0U_1vOX4eBJsmYuPVYVhvhsZ8Y5Nc/edit#gid=0}
-
-
-
+For a subset \textcolor{red}{[$\sim 10$ subjects]}, we repeated the experiment a few hours, days, up to two weeks later, to gain insight on the habituation / learning curve process. \textcolor{red}{\bf [maybe keep acquire these subjects but keep for subsequence publication]}.
 
 %\begin{itemize}
 %  \item {\bf text 0 (adapted from Coming of Age in Samoa, Margaret Mead, 1928
