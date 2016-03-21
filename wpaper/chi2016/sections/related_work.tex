@@ -1,4 +1,24 @@
-\section{Related Work}
+\section{Related Work \& Background}
+The {\it brainspeedr} concept presented in this paper stands at the intersection of research in human-computer interaction (HCI) -- in particular brain-computer interactions (BCI), cognitive science and natural language processing through rapid serial visual presentation (RSVP), and optimal control through feedback mechanisms. 
+
+\subsection{Brain computer interfaces}
+
+The varied yet repeated patterns observed in the brain has provided hope for applications relying on a direct interface between the brain, a processing unit (e.g., a computer), and by extension any system controlled by a computer. Applications involving brain computer interfaces (BCI) span from neurological rehabilitation \cite{daly2008brain} to neurofeedback \cite{lubar1995evaluation,fuchs2003neurofeedback} to brain-controlled wheelchairs \cite{galan2008brain}, or even steering a fighter jet simulation with a robotic arm controlled through 96 micro electrodes implanted in the brain \cite{BCIfighterJet2015}.
+
+Most current BCI approaches are developed in the lab, and most often for very specific applications involving rehabilitation and remediation, mainly building on the temporal characteristics of the EEG signal, namely event-related potential (ERP) \cite{brouwer2010tactile}. Recent work has however featured results obtained with consumer grade EEG headsets, which price is of the order of a few hundred dollars. For instance, it has been demonstrated that the signal of a Neurosky Mindset, a single channel dry EEG headset, can be used to improve driver alertness through appropriate music selection, through a drowsiness detector, involving a combination of machine learning techniques \cite{liu2013driverAlertness}. The same Neurosky device may help bring ``passthoughts"  to the consumer market, as a form of two-factor authentication relying on a mental gesture combined with inner biological brain signal \cite{chuang2013ithink}. This passtought approach has recently been further tested and found to be robust against impersonation attacks \cite{jonhson2014mythoughts}. Building on the same approach, Merrill et al. \cite{merrill2015} developed a simple approach for the classification of mental tasks, using logarithmic quantization combined with a progressive calibration technique. Overall, comparison of consumer-grade single channel EEG with research-grade EEG shows that while consumer-grade EEG cannot locate the origin of the signal, it can discriminate well enough variations of power spectrum intensity, and thus, has potential utility for tasks requiring portability and ease of use \cite{johnstone2012eeg}.
+
+
+\subsection{From rapid serial visual presentation in cognitive science to speed reading}
+
+\subsection{Optimal control through feedback mechanisms}
+
+
+
+
+
+Most research in brain-computer interfaces is geared towards restoring human computer interaction capabilities for heavily motor-impaired disabled.
+
+
 \label{related_work}
 Rapid serial visual presentation (RSVP) has been one of the most used techniques for understanding online cognitive processes, and for designing efficient brain-controlled interfaces (BCI), including widely investigated BCI virtual keyboards \cite{}. Research on cognition intersects with techniques to analyze electroencephalogram (EEG) in the time and frequency domains, in particular, when considering the processing of language \cite{}. 
 
@@ -23,10 +43,6 @@ Although language is a complicated and hard to describe from a physiological per
 %o our knowledge, nothing has been done related to language with consumer grade EEG.
 %Here, we shall show that existing research work supports the hypothesis that a single EEG channel set on the forehead, can detect useful signal for our purpose, and show that we do is feasible, at least in principle. {\bf [Important parameters : main location of signal, wave frequency, and maybe latency]}. 
 
-\subsection{Brain Computer Interfaces}
-The varied yet repeated patterns observed in the brain has provided hope for applications relying on a direct interface between the brain, a processing unit (e.g., a computer), and by extension any system controlled by a computer. Applications involving brain computer interfaces (BCI)  span from neurological rehabilitation \cite{daly2008brain} to neurofeedback \cite{lubar1995evaluation,fuchs2003neurofeedback} to brain-controlled wheelchairs \cite{galan2008brain}, or even steering a fighter jet simulation with a robotic arm controlled through 96 micro electrodes implanted in the brain \cite{BCIfighterJet2015}.
-
-Most current BCI approaches are developed in the lab, and most often for very specific applications involving rehabilitation and remediation, mainly building on the temporal characteristics of the EEG signal, namely event-related potential (ERP) \cite{brouwer2010tactile}. Recent work has however featured results obtained with consumer grade  EEG headsets, which price is of the order of a few hundred dollars. For instance, it has been demonstrated that the signal of a Neurosky Mindset, a single channel dry EEG headset, can be used to improve driver alertness through appropriate music selection, through a drowsiness detector, involving a combination of machine learning techniques \cite{liu2013driverAlertness}. The same Neurosky device may help bring ``passthoughts"  to the consumer market, as a form of two-factor authentication relying on a mental gesture combined with inner biological brain signal \cite{chuang2013ithink}. This passtought approach has recently been further tested and found to be robust against impersonation attacks \cite{jonhson2014mythoughts}. Building on the same approach, Merrill et al. \cite{merrill2015} developed a simple approach for the classification of mental tasks, using logarithmic quantization combined with a progressive calibration technique. Overall, comparison of consumer-grade single channel EEG with research-grade EEG shows that while consumer-grade EEG cannot locate the origin of the signal, it can discriminate well enough variations of power spectrum intensity, and thus, has potential utility for tasks requiring portability and ease of use \cite{johnstone2012eeg}.
 
 
 %We are aware that our input device is of low quality, and cannot, by design, capture spatial brain activation (there is only one electrode). Also, we assume that the low quality (i.e., one channel with dry EEG) is not sufficient to capture time delays (ERPs), usually observed in response to stimuli \cite{}. 
