@@ -1,0 +1,38 @@
+\section{Method}
+\label{method}
+Past research has established the importance of rapid serial visual presentation (RSVP), for the understanding cognition and memory processing, spatio-temporal localization of neural synchronizations following stimuli, and for most brain-computer interfaces (BCI). Reading is a ubiquitous daily activity, which links to these three aforementioned fields.  As online (mostly written) content production has exploded \cite{something about reading more with the Internet}, finding ways for people to read more and faster shall therefore become a sound economic goal. RSVP systems like {\it Spritz} \cite{} or {\it Spreeder} \cite{} go in this direction, but these implementations currently lack an efficient, ubiquitous control of display rate, as noted early by Potter (Applied Questions About RSVP, p114-115 \cite{potter1984rapid}). Since neural activity associated with cognitive effort can be captured by EEG, a BCI for controlling the display rate is a good candidate to overcome this problem. Nonetheless, the BCI interface shall be as cheap as possible to ensure widespread adoption.
+
+\subsection{Hypotheses}
+\label{hypo}
+Here, we design our {\it brain speed reader} under the following set of constraints: (i) ubiquitous control through BCI, by taking into account (ii) cognitive aspects of reading, and (iii) ensuring the lowest possible implementation and operational costs. In other words, given that the noise-to-signal ratio is an inverse function of EEG sophistication, equipment price and operation costs, we shall design an apparatus, which delivers the minimal meaningful signal to ensure a satisfactory control of the word display rate.
+
+For that, we set hypotheses of relations between cognitive activity associated with reading, and the control of word display rate. Increased cognitive activity, involving (conceptual) short-term, working, long-term memory, are reflected by increased neuronal synchronization, in short \cite{} and large frequency ranges \cite{}. \textcolor{red}{be more specific here}. We build on these results to propose two working hypotheses to link the attention measured as the increase of brain synchronization, and of word display in the rapid serial visual presentation (RSVP) setting. The conservative hypothesis is the higher the attention, the slower the word-pace, so that the brain is given enough time to process information (causality between the nature of the text read, and brain processing).
+
+
+{\bf Hypothesis 1a: }  the higher the cognitive activity, the slower the word-pace, 
+
+On the contrary, we aim also to test whether the high attention state benefits fast reading (reverse causality) \textcolor{red}{\bf [any reference on this ?]}. In that case, the prior is the level of brain attention, which in turn enables faster integration of knowledge read through RSVP.
+
+{\bf Hypothesis 1b:} the higher the cognitive activity, the faster the word-pace
+
+Even though, we (assume) we cannot observe reliably the lag observed during knowledge integration by the brain (usually 200-400ms), we shall consider that it has an influence on the design of {\it brain speed reader}, based on RSVP at a usual pace of 100-150 ms/word. So the speed of word presentation shall be adapted smoothly to account for this lag.
+
+{\bf Hypothesis 2:} because the typical lag for knowledge integration from reading may be twice as large as the RSVP typical word exposure time, we shall determine an optimal speed of rate change (derivative of rate, i.e. second derivative of instant presentation time).
+
+{\bf In this study, our overall goal is to find the most comfortable configuration of (i) rate and (ii) adaptability, over a large population, and explain the potential variance at the individual level from control variables.}
+
+In the rest of the Method section, we shall describe successively, (i) the entropy-based signal processing method we have used to measure brain (neural) synchronization, (ii) the apparatus, (iii) the experimental protocol and data collected.
+
+\input{sections/sig_proc}
+\input{sections/apparatus}
+\input{sections/exp_protocol}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=0.9\columnwidth]{../figures/ariel.eps}
+\caption{Show a picture with someone taking the experiment.}
+\label{fig:ariel}
+\end{figure}
+
+
+

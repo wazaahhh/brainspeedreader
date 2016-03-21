@@ -1,0 +1,124 @@
+\section{Related Work \& Background}
+The {\it brainspeedr} concept presented in this paper stands at the intersection of research in human-computer interaction (HCI) -- in particular brain-computer interactions (BCI), cognitive science and natural language processing through rapid serial visual presentation (RSVP), and optimal control through feedback mechanisms. 
+
+\subsection{Brain computer interfaces}
+
+The varied yet repeated patterns observed in the brain has provided hope for applications relying on a direct interface between the brain, a processing unit (e.g., a computer), and by extension any system controlled by a computer. Applications involving brain computer interfaces (BCI) span from neurological rehabilitation \cite{daly2008brain} to neurofeedback \cite{lubar1995evaluation,fuchs2003neurofeedback} to brain-controlled wheelchairs \cite{galan2008brain}, or even steering a fighter jet simulation with a robotic arm controlled through 96 micro electrodes implanted in the brain \cite{BCIfighterJet2015}.
+
+Most current BCI approaches are developed in the lab, and most often for very specific applications involving rehabilitation and remediation, mainly building on the temporal characteristics of the EEG signal, namely event-related potential (ERP) \cite{brouwer2010tactile}. Recent work has however featured results obtained with consumer grade EEG headsets, which price is of the order of a few hundred dollars. For instance, it has been demonstrated that the signal of a Neurosky Mindset, a single channel dry EEG headset, can be used to improve driver alertness through appropriate music selection, through a drowsiness detector, involving a combination of machine learning techniques \cite{liu2013driverAlertness}. The same Neurosky device may help bring ``passthoughts"  to the consumer market, as a form of two-factor authentication relying on a mental gesture combined with inner biological brain signal \cite{chuang2013ithink}. This passtought approach has recently been further tested and found to be robust against impersonation attacks \cite{jonhson2014mythoughts}. Building on the same approach, Merrill et al. \cite{merrill2015} developed a simple approach for the classification of mental tasks, using logarithmic quantization combined with a progressive calibration technique. Overall, comparison of consumer-grade single channel EEG with research-grade EEG shows that while consumer-grade EEG cannot locate the origin of the signal, it can discriminate well enough variations of power spectrum intensity, and thus, has potential utility for tasks requiring portability and ease of use \cite{johnstone2012eeg}.
+
+
+\subsection{From rapid serial visual presentation in cognitive science to speed reading}
+
+\subsection{Optimal control through feedback mechanisms}
+
+
+
+
+
+Most research in brain-computer interfaces is geared towards restoring human computer interaction capabilities for heavily motor-impaired disabled.
+
+
+\label{related_work}
+Rapid serial visual presentation (RSVP) has been one of the most used techniques for understanding online cognitive processes, and for designing efficient brain-controlled interfaces (BCI), including widely investigated BCI virtual keyboards \cite{}. Research on cognition intersects with techniques to analyze electroencephalogram (EEG) in the time and frequency domains, in particular, when considering the processing of language \cite{}. 
+
+\subsection{RSVP and Cognition}
+In cognitive sciences, rapid serial visual presentation (RSVP) has been developed as a way to control the rate of stimuli appearance, in a sequence of words or pictures. Varying stimuli and their rate of appearance helped {\it reverse-engineer} and as a result, understand better how the brain first processes information presented before the subject eyes, and then help recall it. Typical tasks include asking a subject to recall world lists of varying length and presented at varying rates. Results show that recall performance is not only a (negative) function of wordlist length and presentation rate \cite{}, but also a positive function of word congruence \cite{}: if words in the list are more related to each others, then they are altogether easier to recall \cite{}. Also, the way stimuli are recalled count: if the restitution is exactly the input, there is a good chance that  short-term working memory (STM) has been solicited \cite{}. On the contrary, if the restitution is not exactly like the input, but makes use of conceptually close words or images, then these concepts are likely to be pulled out a long-term memory (LTM). Some additional types of memory have been identified, such conceptual short-term memory (CSTM), which acts as buffer between STM and LTM \cite{potter1993very}. The relations between these different memory types and their respective latencies have concrete implications on the understanding of natural language sequences of words \cite{potter1984rapid}. For example, a short time latency after a sentence or paragraph usually improves knowledge integration \cite{see review by potter}. Also, the time required to reading a series of words in natural language can be estimated at the word level as being logarithmic of the word predictability, which is itself related to word congruence in the text \cite{smith2013effect}. \textcolor{red}{\bf [I am still missing some references on the processing lag (between stimulus and conceptualization ($~200ms$?]}
+
+Potter et al. (1980) found RSVP to an effective way to ensure every word is read, but less effective than rapid reading when overall retention was measured. It is worth noting that scrolled and rapid serial visual presentation texts are read at similar rates by the visually impaired \cite{fine1995scrolled} \textcolor{red}{\bf [ could be moved to intro or discussion or both]}. Chen (1983) found that the half of his college subjects who were less good readers remember more from RSVP paragraphs than from conventional paragraphs viewed for the same total time; the better readers showed a slight but not significant drop, with RSVP.
+
+\subsection{Neurosciences of Natural Language Processing}
+With the development of neuroimaging techniques, such as electroencephalograms (EEG), magnetic resonance imaging (MRI), and functional MRI (fMRI), the study of cognitive processes has become physiological, with improved possibilities to observe brain activations in space and time, following one or multiple stimuli. For instance, neuroimaging of short-term and long-term memory processes has been studied with EEG in the spectral dimension \cite{klimesch1999eeg,khader2011eeg}, and suggest that increased activity within the upper alpha () and theta () frequency bands correlate with search and retrieval processes of semantic information stored in cortical associative networks \cite{klimesch1996memory,klimesch1990alpha}. Results from several studies \cite{khader2011eeg} suggest that upper alpha seems to be related to semantic long-term memory (LTM) retrieval, while theta activity seems to be related to episodic LTM encoding \cite{} and the maintenance of information in short-term working memory \cite{}. 
+
+%EEG alpha and theta oscillations reflect cognitive and memory performance: a review and analysis \cite{klimesch1999eeg}, as well as in relation with short-term and long-term memories.  \cite{khader2011eeg}. 
+
+Language is intimately related to cognitive processes associated with memory, and because it is a feature almost unique human beings, it accounts as one of the most interesting, challenging and highly investigated research topics in neuroscience \cite{beeman1998right,pulvermuller2002neuroscience}. Language has traditionally been attributed to the Broca Region {\bf [say more here from the paper]} \cite{keller2009broca} and, it was found that left prefrontal brain regions are substantially more involved during encoding of verbal stimuli, which is correlated with increased involvement of the semantic memory system and simultaneous encoding into the short-term memory \cite{fletcher1998functiona,tulving1994hemispheric}. Language processing being a complex task, not only one region and particular frequency ranges of the brain are involved. Weiss et al. \cite{weiss2000long} found long-range EEG synchronization during word encoding associated with high memory performance (primarily between the prefrontal and temporal-parietal regions), as well as an increase in spectral activity in the lower frequencies \cite{kujala2007phase}. It was also found that higher frequencies (Gamma range $>20Hz$) exhibit an increased intensity during processing of words \cite{pulvermuller1995spectral}. From EEG studies, it was found that language processing triggers increased neuronal communication in a variety of regions, but importantly in the frontal-parietal region, and over many frequency ranges [$\theta$ (4 to 7 Hz),$\beta_1$ (13 to 18 Hz) and $\gamma$ (30 to 34 Hz)] \cite{weiss2005increased}. A recent RSVP study combined with Magnetoencephalogram (MEG) spatio-temporal acquisition of coherence of brain regions brought evidence that the 8-13 Hz frequency range (followed by 16-24Hz for four over nine subjects) accounts for most signal associated with reading, and across brain regions, with particularly high coherence density {\bf [explain or rephrase this]} in the frontal-parietal region \cite{kujala2007phase}, although a number of other regions appear to be involved with the cognition processed associated with language processing and reading, reflecting the necessary complex cognitive operations associated with a complex interplay of neuronal synchronizations in the spatial and frequency domains.
+
+%(MRI study?) Activation of left prefrontal and medial temporal cortices were engaged during the encoding of both recalled and forgotten words \cite{wagner1998building}. At least partially supported by Kapur et al. \cite{kapur1996neural} in a PET (positron emission tomography) study 
+
+%Processing new and repeated names: Effects of coreference on repetition priming with speech and fast RSVP  (ERP?) \cite{camblin2007processing}
+
+Although language is a complicated and hard to describe from a physiological perspective, there is reasonable support for brain coherence appearing at various frequency ranges, following the complicated cognitive processes, involving short-term and long-term memory.
+
+%o our knowledge, nothing has been done related to language with consumer grade EEG.
+%Here, we shall show that existing research work supports the hypothesis that a single EEG channel set on the forehead, can detect useful signal for our purpose, and show that we do is feasible, at least in principle. {\bf [Important parameters : main location of signal, wave frequency, and maybe latency]}. 
+
+
+
+%We are aware that our input device is of low quality, and cannot, by design, capture spatial brain activation (there is only one electrode). Also, we assume that the low quality (i.e., one channel with dry EEG) is not sufficient to capture time delays (ERPs), usually observed in response to stimuli \cite{}. 
+
+%\subsection{RSVP, Cognition and Memory}
+%Research on cognition relating to a rapid sequence of words \cite{forster1970visual} and pictures \cite{potter1975time,potter1969recognition} go back to the 70's and 80's. RSVP offers a way to control these processes at fine-grained level. Rapid serial visual presentation (RSVP): A method for studying language processing \cite{potter1984rapid} 
+%
+%
+%This research is centered on (i) how long it takes to internalize the meaning of a word or a sentence, sufficiently that it is possible to recall it accurately, (ii) what kinds of memory processes are solicited [short-term memory (STM) or iconic memory, long-term memory (LTM), working memory (WM)], and (iii) how these are engaged to transform ``raw" information into ``conceptual" information, which can be recalled more easy \cite{}. To emphasize on the interplay between STM bringing information, and LTM pulling out useful concepts for broader understanding, Molly Potter introduced Conceptual Short-Term Memory (CSTM) \cite{potter1993very}. ``Unlike STM, CSTM is central to cognitive processing.
+%Recognition of meaningful stimuli such as words or objects
+%rapidly activates conceptual information and leads
+%to the retrieval of additional relevant information from
+%LTM." \cite{potter1993very}. It also depends on the goals set: e.g., identify a specific item in a list, or get a conceptual understanding of a sequence.
+
+%It is important to point out the difference between the capacity to recall unrelated words versus semantically related words, but also, in the case of whole paragraphs, some (short) time is required after a sentence to integrate knowledge \cite{}.
+
+
+
+%Visual perception of rapidly presented word sequences of varying complexity 
+
+%Temporal limits of selection and memory encoding a comparison of whole versus partial report in rapid serial visual presentation \cite{nieuwenstein2006temporal}
+
+%Rapid serial visual presentation: a space-time trade-off in information presentation \cite{de2000rapid}
+
+%\subsection{Memory and Time to Process Information}
+%``When people view or listen to continuous sequences of scenes or
+%words, as they do when they look around, read, listen, or watch TV,
+%a series of conceptual representations is activated. These rapidly activated
+%and equally rapidly forgotten representations are the raw material
+%for identification and comprehension of words, pictures, and
+%sequences such as a sentence, and indeed for intelligent thought more
+%generally. The normal ease with which we understand what we read
+%and see around us is based on selective processing that takes place
+%much faster than has been supposed in many theories of working and
+%short-term memory, leading to the CSTM hypothesis." \cite{potter1999understanding,potter1993very}
+%
+%``CSTM is a processing and memory system different from early visual (iconic)
+%memory, conventional short-term memory (STM), and longer-term
+%memory (LTh{) in three important respects: (1) the rapidity with which
+%stimuli readr a postcategoricaf meaningful level of representation, (2)
+%the rapid struchrring of these representations, and (3) the lack of awareness
+%(or immediate forgetting) of inforrration that is not structured
+%or otherwise consolidated. Structure-building in CSTM ranges from
+%spontaneous grouping of words in lists on the basis of meaning (one
+%of the simplest forrrs of conceptual structuring) to linguistic parsing
+%and semantic interpretation of sentences and more extended texts
+%(examples of highly skilled structuring). Organization or structuring
+%of new stimuli enhances memory for them." \cite{potter1999understanding}
+%
+%A capacity theory of comprehension: individual differences in working memory \cite{just1992capacity}
+%
+%Individual differences in working memory and reading \cite{daneman1980individual}
+%
+%``Second, this information is used in various ways, depending on the
+%viewer's current goal if the viewer is trying to understand the whole
+%sequence (e.9., a sentence), the information is used to discover or build
+%a comprehensive structured representation, but if the viewer is trying
+%to locate and identify a particular kind of information (as in target
+%search), then only a subset of the information is selected." \cite{potter1999understanding}
+%
+%``processingT. he CSTM hypothesis
+%is not only that conceptual information is activated rapidly, but
+%also that the initial activation is highly unstable, such that the
+%information is deactivated or forgotten within a few hundred
+%msec if it is not incorporated into a structure (or selected for
+%further processing" \cite{potter1999understanding}
+%
+
+
+
+
+
+
+
+
+
+
+
+

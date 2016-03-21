@@ -8,7 +8,3 @@
 *.out
 *.synctex.gz
 brainspeed.synctex.gz
-
-data/
-rawdata*
-textValues.csv
