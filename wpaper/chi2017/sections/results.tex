@@ -1,0 +1,50 @@
+\section{Results}
+\label{results}
+The {\it brain speed reader} is an attempt to test a fast-paced brain-computer interface, which bets that humans can self-regulate their brain wave modulations, in order to control the rate of stimuli in a rapid serial visual presentation setting. Self-regulation achievement is a token of concentration on the coherent sequence of stimuli displayed. Therefore, to evaluate the {\it brain speed reader}, we have primarily focused on the capacity to self-regulate. We tested two opposed designs: {\it bsr+} ($\alpha = 0.005$) and {\it bsr-} ($\alpha = -0.005$). We compared the brain speed reader treatments to the constant RSVP rate [$X(t)  = 125$ ms/word], for perceived comfort and comprehension, keeping in mind that speed reading, and RSVP speed reading in particular, are somewhat unusual: In our 21 participants sample, only one had practiced speed reading before taking the experiment.
+
+\subsection{Self-regulation achievement \& perceived comfort}
+With no previous research or preliminary results at hand, we had no {\it a priori} hypothesis on whether users can achieve self-regulation ($stability <  2$) at all, for both treatments  {\it bsr+} and {\it bsr-}, or only for one of them. We found that 72\% of the participants who took {\it bsr+} achieved self-regulation at least once. Similarly, 58\% of the participants could achieve self-regulation at least once in the {\it bsr-} treatment. These results show that capabilities by humans to achieve self-regulation are high even without prior training. Self-regulation with {\it bsr+} treatment appears to be only slightly more prevalent, suggesting that one RSVP rate update method is easier than the other. To confirm this hypothesis, we considered participants who achieved self-regulation for both {\it bsr+} and {\it bsr-}. We found that 47\% of the participants could self-regulate with both opposed treatments. This result suggests in turn that, for roughly half users tested, the brain has enough plasticity to adapt the brain wave modulations, in order to successfully control the RSVP rate. Since there is no {\it ex-ante} training in the experiment, we can assert that this adaptation occurs quickly, reflecting a form of brain dynamical plasticity.
+
+
+\begin{table}[h!]
+	\centering
+	\caption{Ordinary least square regression of stability.}
+	\begin{tabular}{lcccc} \hline
+		& (1) & (2) \\%& (3) & (4) \\
+		VARIABLES & -Stability & -Stability \\%& $V_{it}$ & $V_{it}$ \\ \hline
+		&  &  \\%&  &  \\
+		Age & {\bf -0.0300**} & {\bf -0.0345**} \\ %& -2.310*** & -1.236** \\
+		& {\it (0.0073)} & {\it (0.0087)} \\%& (0.603) & (0.515) \\
+		Normal Read Rate & {\bf 0.1650*} & {\bf 0.0920*}  \\%& -23.72*** & -7.188** \\
+		& {\it (0.0628)} & {\it (0.067)} \\%& (2.152) & (3.473) \\
+		Text Length & {\bf -0.0013***} &  {\bf -0.0012***} \\%& -3.312*** & -3.758*** \\
+		& {\it (0.0004)} & {\it (0.0005)} \\%& (1.239) & (1.128) \\
+		Reading Pleasure & {\bf 0.3034*} & {\bf 0.2436*} \\ %& -0.0312 & -0.0321* \\
+		& {\it (0.0591)} & {\it (0.0650)} \\ 
+		Speed Reading Comfort & {\bf -0.0726*}  & {\bf -0.1217*} \\%& 0.106** & 0.0755* \\
+		& {\it (0.0355)} & {\it (0.0346)}  \\%& (0.0431) & (0.0406) \\
+		Familiar Topic & {\bf -0.091*} &  \\%& 16.75*** & -7.414 \\
+		& {\it (0.040)} & \\%& (1.339) & (5.698) \\
+		Constant & -1.3213 & -0.6579 \\%& 190.3*** & 136.5*** \\
+		& {\it (0.5390)} & {\it (0.5565)} \\%& (23.17) & (26.17) \\
+		&  &  \\%&  &  \\
+		
+		R-squared & 0.8148 & 0.8930 \\%& 0.319 & 0.647 \\
+		p-value & 0.0042 & 0.0083\\
+		Observations & 14 & 14 \\%& 1,212 & 1,212 \\
+		%Program FE & No & No \\%& No & Yes \\ \hline
+		&  &  \\
+		\hline
+		\multicolumn{3}{l}{ Robust standard errors in parentheses} \\
+		\multicolumn{3}{l}{ *** p$<$0.001, ** p$<$0.01, * p$<$0.05} \\
+	\end{tabular}
+	\label{tab:reg}
+\end{table}
+
+We have considered an arbitrary threshold for stability ($stability < 2$), but stability is a continuous variable from 0 (perfect stability, i.e., constant rate) to $\infty$ [here, $max(stability) = 5$ by convention, see section Methods]. Considering participants who achieved stability ($ 0 < stability < 2$), we take stability as a dependent variable, and using a ordinary least square (OLS) model we have investigated which demographic, text, and reported comfort control variables best influence stability (c.f. Table \ref{tab:reg}). We found that reading speed in normal setting, familiarity with the topic, and reading pleasure are highly associated with increased stability. On the contrary, age and text length negatively influences stability achievement. Surprisingly, speed reading comfort and familiarity with the topic (as reported by participants) is also negatively associated with stability. The negative impact of speed reading comfort may suggest that less stability introduces some additional degree of freedom on how users control the RSVP rate (yet at the expense of reading pleasure). We have no explanation for the negative impact of topic familiarity. We have tested a second model (2) by removing the familiarity with the topic. All other parameters remain almost unchanged.
+
+\subsection{Reading speed}
+Reading speed is another important factor. During the preliminary tasks, participants were asked to read an article excerpt entirely displayed on the screen. We find that it took $240\pm50$ milliseconds/word to read this piece of text, even though there were no follow-up comprehension questions, unlike for the RSVP treatments for which participants were informed of a detailed description of follow-up comprehension questions. For those who achieved stability during {\it bsr+} and {\it bsr-} treatments, the average RSVP rate was found to be very close to 125 milliseconds per word with 5th and 95th percentiles, respectively 110  and 142 ms/word. The confidence interval of average RSVP rate found here is similar but smaller than what was found as the comfort zone in previous research (80 to 200 ms/word) \cite{kujala2007phase}. Another explanation would be that the proximity of the average RSVP rate with the initial rate $X(t=0) = 125$, may explain why the average rate was found to be very close to this value. 
+
+\subsection{Comprehension}
+Now we turn to reading comprehension as tested from (i) short summary, (ii) free recall of proper nouns, and (iii) selecting common nouns. We find limited support suggesting that more stability increases the capacity to produce a meaningful summary (Spearman correlation $\rho= 0.35$, $p = 0.069$). However, we found no effect on proper and common nouns recall.
