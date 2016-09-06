@@ -12,7 +12,8 @@
 
 {\bf [blink artifacts $\rightarrow$ Szibbo, D., Luo, A. \& Sullivan, T. J. Removal of blink artifacts in single channel EEG. Conf. Proc. IEEE Eng Med. Biol. Soc. 2012, 3511Ð3514 (2012).]}
 
-We shall now design a system that takes cognitive activity, recorded by  EEG and represented by entropy, as an input to control the speed, and the evolution of speed (resp. the first and second derivatives of instant display time) at which words are displayed on the screen through RSVP.
+% TODO is entropy introduced/explained somewhere?
+We shall now describe a system that takes EEG activity, represented by entropy, as an input to control the speed, and the evolution of speed (resp. the first and second derivatives of instant display time) at which words are displayed on the screen through RSVP.
 
 We define $X = X(t)$ the presentation duration for each word. At each iteration, X is updated according to,
 % $\dot{x} = dx/dt$, the instant change of presentation duration, and $\ddot{x} = d\dot{x}/dt = d^{2}x/dt$, the instant change of  $\dot{x}$.  $\dot{x}$ and $\ddot{x}$ shall be seen as the speed and the acceleration of the presentation duration over time. These metrics are the control parameters of the brain speed reader, and shall help validate the hypotheses formulated above.
