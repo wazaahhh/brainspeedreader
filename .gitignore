@@ -8,3 +8,5 @@
 *.out
 *.synctex.gz
 brainspeed.synctex.gz
+
+.DS_Store
